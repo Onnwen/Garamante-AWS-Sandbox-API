@@ -57,7 +57,7 @@ async function getAll() {
                     branch.tags[index] = {"firstColor": "#2F80ED", "secondColor": "#56CCF2", "name": "TypeScript"};
                     break;
                 case "Boostrap":
-                    branch.tags[index] = {"firstColor": "#563d7c", "secondColor": "#563d7c", "name": "Boostrap"};
+                    branch.tags[index] = {"firstColor": "#563d7c", "secondColor": "#563d7c", "name": "Bootstrap"};
                     break;
                 default:
                     branch.tags[index] = {"firstColor": "#232526", "secondColor": "#414345", "name": tag};
