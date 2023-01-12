@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
     res.json({name: "Garamante AWS Sandbox API", server_status: "running"});
 });
 
-app.use("/works", require("./routes/works"));
+app.use("/", require("./routes/works"));
 
 /* Error handler */
 app.use((err, req, res, next) => {
