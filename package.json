@@ -1,5 +1,5 @@
 {
-  "name": "Garamante AWS Sandbox API",
+  "name": "Garamante-AWS-Sandbox-API",
   "version": "1.0.0",
   "dependencies": {
     "@octokit/rest": "^19.0.5",
