@@ -5,7 +5,7 @@ const fs = require("fs");
 
 async function getAll() {
     const auth = new Octokit({
-        auth: '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'
+        auth: fs.readFileSync('token.txt', 'utf8').toString()
     })
 
     const request = await auth.request('GET /repos/{owner}/{repo}/branches{?protected,per_page,page}', {
