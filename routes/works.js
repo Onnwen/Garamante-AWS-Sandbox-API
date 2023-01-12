@@ -2,16 +2,20 @@ const express = require('express');
 const router = express.Router();
 const works = require('../services/works');
 
-/* GET | /works */
-router.get('/', async function(req, res, next) {
+/* GET | /works/get/all */
+router.get('/get/all', async function(req, res, next) {
     try {
-        let worksInfo = await works.getAll();
-        if (worksInfo.length) {
-            res.json(worksInfo);
-        }
-        else {
-            res.json({message: "No works founds."});
-        }
+        res.json(await works.getAll());
+    } catch (err) {
+        console.error(`Error`, err.message);
+        next(err);
+    }
+});
+
+/* GET | /works/manage/update */
+router.get('/manage/update', async function(req, res, next) {
+    try {
+        res.json(await works.loadAll());
     } catch (err) {
         console.error(`Error`, err.message);
         next(err);
