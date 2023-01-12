@@ -48,7 +48,7 @@ async function getAll() {
                     branch.tags[index] = {"firstColor": "#f12711", "secondColor": "#f5af19", "name": "Angular"};
                     break;
                 case "PHP":
-                    branch.tags[index] = {"firstColor": "#2F0743", "secondColor": "#2F0743", "name": "PHP"};
+                    branch.tags[index] = {"firstColor": "#6a3093", "secondColor": "#a044ff", "name": "PHP"};
                     break;
                 case "jQuery":
                     branch.tags[index] = {"firstColor": "#56ab2f", "secondColor": "#a8e063", "name": "jQuery"};
