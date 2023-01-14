@@ -67,43 +67,13 @@ async function getAll() {
     });
 
     return branches;
-    //
-    // // Organize branches by day
-    // let branchesByDay = [];
-    // let currentDay = branches[0].date;
-    // let currentDayBranches = [];
-    // branches.forEach(branch => {
-    //     if (branch.date.getTime() === currentDay.getTime()) {
-    //         currentDayBranches.push(branch);
-    //     } else {
-    //         branchesByDay.push({
-    //             date: currentDay,
-    //             formattedDate: currentDayBranches[0].formattedDate,
-    //             branches: currentDayBranches
-    //         });
-    //
-    //         currentDay = branch.date;
-    //         currentDayBranches = [];
-    //         currentDayBranches.push(branch);
-    //     }
-    // });
-    //
-    // console.log(branchesByDay)
-    //
-    // return branchesByDay;
 }
 
 async function loadAll() {
     exec("rm -r works && mkdir works", (error, stdout, stderr) => {
-        if (error) {
+        if (error || stderr) {
             console.log(`error: ${error.message}`);
-            return;
         }
-        if (stderr) {
-            console.log(`stderr: ${stderr}`);
-            return;
-        }
-        console.log(`stdout: ${stdout}`);
 
         getAll().then(branches => {
             branches.forEach(branch => {
