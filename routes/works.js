@@ -13,7 +13,7 @@ router.get('/info', async function(req, res, next) {
 });
 
 /* GET | /update */
-router.get('/update', async function(req, res, next) {
+router.post('/update', async function(req, res, next) {
     try {
         res.json(await works.loadAll());
     } catch (err) {

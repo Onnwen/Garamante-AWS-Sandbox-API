@@ -48,7 +48,7 @@ async function getAll() {
                     branch.tags[index] = {"firstColor": "#f12711", "secondColor": "#f5af19", "name": "Angular"};
                     break;
                 case "PHP":
-                    branch.tags[index] = {"firstColor": "#2F0743", "secondColor": "#2F0743", "name": "PHP"};
+                    branch.tags[index] = {"firstColor": "#6a3093", "secondColor": "#a044ff", "name": "PHP"};
                     break;
                 case "jQuery":
                     branch.tags[index] = {"firstColor": "#56ab2f", "secondColor": "#a8e063", "name": "jQuery"};
@@ -56,8 +56,8 @@ async function getAll() {
                 case "TypeScript":
                     branch.tags[index] = {"firstColor": "#2F80ED", "secondColor": "#56CCF2", "name": "TypeScript"};
                     break;
-                case "Boostrap":
-                    branch.tags[index] = {"firstColor": "#563d7c", "secondColor": "#563d7c", "name": "Boostrap"};
+                case "Bootstrap":
+                    branch.tags[index] = {"firstColor": "#563d7c", "secondColor": "#563d7c", "name": "Bootstrap"};
                     break;
                 default:
                     branch.tags[index] = {"firstColor": "#232526", "secondColor": "#414345", "name": tag};
