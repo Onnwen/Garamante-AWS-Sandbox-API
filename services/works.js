@@ -43,21 +43,30 @@ async function getAll() {
 
     branches.forEach(branch => {
         branch.tags.forEach((tag, index) => {
-            switch (tag) {
-                case "Angular":
+            switch (tag.toUpperCase()) {
+                case "ANGULAR":
                     branch.tags[index] = {"firstColor": "#f12711", "secondColor": "#f5af19", "name": "Angular"};
                     break;
                 case "PHP":
                     branch.tags[index] = {"firstColor": "#6a3093", "secondColor": "#a044ff", "name": "PHP"};
                     break;
-                case "jQuery":
+                case "JQUERY":
                     branch.tags[index] = {"firstColor": "#56ab2f", "secondColor": "#a8e063", "name": "jQuery"};
                     break;
-                case "TypeScript":
+                case "TYPESCRIPT":
                     branch.tags[index] = {"firstColor": "#2F80ED", "secondColor": "#56CCF2", "name": "TypeScript"};
                     break;
-                case "Bootstrap":
+                case "BOOTSTRAP":
                     branch.tags[index] = {"firstColor": "#563d7c", "secondColor": "#563d7c", "name": "Bootstrap"};
+                    break;
+                case "HTML":
+                    branch.tags[index] = {"firstColor": "#021B79", "secondColor": "#0575E6", "name": "HTML"};
+                    break;
+                case "JAVA":
+                    branch.tags[index] = {"firstColor": "#CAC531", "secondColor": "#b7ab00", "name": "Java"};
+                    break;
+                case "XML":
+                    branch.tags[index] = {"firstColor": "#ED213A", "secondColor": "#93291E", "name": "XML"};
                     break;
                 default:
                     branch.tags[index] = {"firstColor": "#232526", "secondColor": "#414345", "name": tag};
