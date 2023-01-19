@@ -63,7 +63,7 @@ async function getAll() {
                     branch.tags[index] = {"firstColor": "#021B79", "secondColor": "#0575E6", "name": "HTML"};
                     break;
                 case "JAVA":
-                    branch.tags[index] = {"firstColor": "#CAC531", "secondColor": "#b7ab00", "name": "Java"};
+                    branch.tags[index] = {"firstColor": "#FDC830", "secondColor": "#F37335", "name": "Java"};
                     break;
                 case "XML":
                     branch.tags[index] = {"firstColor": "#ED213A", "secondColor": "#93291E", "name": "XML"};
